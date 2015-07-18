@@ -1,5 +1,6 @@
 package yalantis.com.sidemenu.util;
 
+import android.app.Activity;
 import android.os.Handler;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -23,7 +24,7 @@ public class ViewAnimator<T extends Resourceble> {
     private final int ANIMATION_DURATION = 175;
     public static final int CIRCULAR_REVEAL_ANIMATION_DURATION = 500;
 
-    private ActionBarActivity actionBarActivity;
+    private Activity actionBarActivity;
     protected List<T> list;
 
     protected List<View> viewList = new ArrayList<>();
@@ -31,7 +32,7 @@ public class ViewAnimator<T extends Resourceble> {
     protected DrawerLayout drawerLayout;
     protected ViewAnimatorListener animatorListener;
 
-    public ViewAnimator(ActionBarActivity activity,
+    public ViewAnimator(Activity activity,
                         List<T> items,
                         ScreenShotable screenShotable,
                         final DrawerLayout drawerLayout,
