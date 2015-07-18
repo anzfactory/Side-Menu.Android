@@ -24,12 +24,12 @@ public class ViewAnimator<T extends Resourceble> {
     public static final int CIRCULAR_REVEAL_ANIMATION_DURATION = 500;
 
     private ActionBarActivity actionBarActivity;
-    private List<T> list;
+    protected List<T> list;
 
-    private List<View> viewList = new ArrayList<>();
-    private ScreenShotable screenShotable;
-    private DrawerLayout drawerLayout;
-    private ViewAnimatorListener animatorListener;
+    protected List<View> viewList = new ArrayList<>();
+    protected ScreenShotable screenShotable;
+    protected DrawerLayout drawerLayout;
+    protected ViewAnimatorListener animatorListener;
 
     public ViewAnimator(ActionBarActivity activity,
                         List<T> items,
